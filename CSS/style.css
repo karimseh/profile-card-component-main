@@ -25,6 +25,10 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+html{
+    overflow: hidden;
+    max-height: 100vh;
+}
 
 body {
     display: flex;
@@ -44,6 +48,8 @@ body {
 .topsvg {
     position: fixed;
     z-index: -1;
+
+    object-fit: cover;
     transform: translate(-50%,-40%);
   
     
@@ -54,6 +60,8 @@ body {
 .botsvg {
     position: fixed;
     z-index: -1;
+    
+    object-fit: cover;
     transform: translate(50%,50%);
   
 }
